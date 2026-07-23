@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoTarimas MX | Venta y reciclaje de tarimas de madera</title>
+  <meta name="description" content="EcoTarimas MX vende, compra, repara y fabrica tarimas de madera reciclada para empresas de logística, manufactura y comercio. Cotiza por WhatsApp al +52 56 4122 5210.">
+  <meta name="keywords" content="tarimas de madera, pallets reciclados, venta de tarimas, compra de pallets usados, reparacion de tarimas, tarimas por mayoreo">
+  <meta property="og:title" content="EcoTarimas MX | Tarimas de madera reciclada">
+  <meta property="og:description" content="Venta, compra, reparacion y fabricacion de tarimas de madera con enfoque sustentable y atencion directa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagenes/tarimas-hero.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-mark">
+    <span class="wordmark">EcoTarimas <em>MX</em></span>
+    <div class="ld-ring"></div>
+  </div>
+  <p class="ld-tag">Madera recuperada para operaciones que no se detienen</p>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menu principal">
+  <div class="nav-wrap">
+    <a href="#hero" class="logo" aria-label="EcoTarimas MX">
+      <span class="logo-mark" aria-hidden="true">ET</span>
+      <span class="wordmark">EcoTarimas <em>MX</em></span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#inventario">Tarimas</a></li>
+      <li><a href="#why">Ventajas</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menu movil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#inventario">Tarimas</a>
+  <a href="#why">Ventajas</a>
+  <a href="#contact">Cotizar</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow rev">Venta y reciclaje de tarimas de madera</p>
+      <h1 class="hero-h1 rev d1">
+        <span class="h1-line"><span class="h1-inner">Tarimas recicladas</span></span>
+        <span class="h1-line"><span class="h1-inner">para empresas que</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner">mueven todos los dias</span></span>
+      </h1>
+      <p class="hero-typewriter rev d2" aria-label="Servicios principales">
+        <span class="tw-label">Soluciones:</span>
+        <span class="tw-text" id="twText"></span><span class="tw-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-p rev d3">
+        Compra, reparacion, fabricacion y venta de tarimas de madera con enfoque de economia circular. Una alternativa solida, eficiente y sustentable para logistica, manufactura y comercio.
+      </p>
+      <div class="hero-btns rev d4">
+        <a href="https://wa.me/525641225210?text=Hola%2C%20me%20interesa%20cotizar%20tarimas%20de%20madera%20con%20EcoTarimas%20MX" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Cotizar por WhatsApp
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="tel:+525641225210" class="btn-secondary">Llamar ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Datos clave">
+    <div class="wrap">
+      <div class="stats-row rev d5">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="5" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Servicios principales</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Mayoreo</span>
+          <span class="stat-lbl">Atencion a empresas</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">L-S</span>
+          <span class="stat-lbl">9:00 a.m. a 6:00 p.m.</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val">Eco</span>
+          <span class="stat-lbl">Madera recuperada</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-badge rev d4" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Economia circular aplicada a tu operacion</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Servicios resumidos">
+  <div class="wrap">
+    <div class="trust-row rev">
+      <p class="trust-label">Trabajamos con</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Tarimas recicladas</span>
+        <span class="trust-chip">Pallets usados</span>
+        <span class="trust-chip">Reparacion</span>
+        <span class="trust-chip">Fabricacion</span>
+        <span class="trust-chip">Mayoreo</span>
+        <span class="trust-chip">Medidas a la orden</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-warm">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img src="imagenes/tarimas-bodega.webp" alt="Tarimas de madera reciclada apiladas en bodega" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">2da</p>
+          <p class="a-lbl">vida para la madera</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quienes somos</p>
+        <h2 class="heading heading--shine">Tarimas recuperadas con presencia corporativa</h2>
+        <p>EcoTarimas MX es una propuesta de negocio dedicada a dar nueva vida a pallets y tarimas de madera mediante compra, reparacion y reventa para empresas que necesitan abastecimiento constante.</p>
+        <p>El enfoque combina ahorro operativo, disponibilidad y responsabilidad ambiental: menos desperdicio de madera, mas uso util y una respuesta directa para cotizaciones por telefono o WhatsApp.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="5" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Lineas de servicio</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">L-S</p>
+            <p class="a-stat-l">Horario propuesto</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">B2B</p>
+            <p class="a-stat-l">Venta por mayoreo</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n">MX</p>
+            <p class="a-stat-l">Atencion directa</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-light">
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading heading--shine">Servicios para mantener tu cadena de suministro en movimiento</h2>
+      <p class="sub">Soluciones de tarimas para operaciones que buscan precio competitivo, disponibilidad y una alternativa mas sustentable.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-wood" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16M6 5v14M12 5v14M18 5v14"/></svg>
+        </div>
+        <h3>Venta de tarimas recicladas</h3>
+        <p>Tarimas de madera recuperada para almacenaje, traslado y manejo de producto, con opciones estandar y seleccion por necesidad.</p>
+        <p class="svc-models">Estandar · Reforzadas · Uso industrial</p>
+      </article>
+
+      <article class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M4 4h3v3M20 4h-3v3M4 20h3v-3M20 20h-3v-3"/></svg>
+        </div>
+        <h3>Compra de pallets usados</h3>
+        <p>Recibimos tarimas usadas para reincorporarlas al ciclo productivo y reducir desperdicio de madera en patios y bodegas.</p>
+        <p class="svc-models">Recoleccion · Clasificacion · Recuperacion</p>
+      </article>
+
+      <article class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-wood" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 7l3 3-8 8H6v-3l8-8z"/><path d="M12 5l2-2 3 3-2 2"/></svg>
+        </div>
+        <h3>Reparacion y restauracion</h3>
+        <p>Reemplazo de tablas, refuerzo estructural y recuperacion de piezas para alargar la vida util de tus tarimas.</p>
+        <p class="svc-models">Diagnostico · Reparacion · Reuso</p>
+      </article>
+
+      <article class="svc-card rev d4">
+        <span class="svc-num" aria-hidden="true">04</span>
+        <div class="svc-icon ic-green" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12"/><path d="M8 20v-7h8v7"/><path d="M10 8h4"/></svg>
+        </div>
+        <h3>Fabricacion bajo pedido</h3>
+        <p>Produccion de tarimas nuevas o medidas especiales para cargas, anaqueles o procesos con requerimientos especificos.</p>
+        <p class="svc-models">A la medida · Bajo volumen · Mayoreo</p>
+      </article>
+
+      <article class="svc-card rev d5">
+        <span class="svc-num" aria-hidden="true">05</span>
+        <div class="svc-icon ic-wood" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 4v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        </div>
+        <h3>Entrega por mayoreo</h3>
+        <p>Abastecimiento recurrente para empresas de logistica, manufactura, comercio y almacenes con demanda constante.</p>
+        <p class="svc-models">Empresas · Almacenes · Distribucion</p>
+      </article>
+
+      <article class="svc-card svc-card--image rev d6">
+        <img src="imagenes/tarimas-detalle.webp" alt="Detalle de tarimas de madera apiladas" loading="lazy">
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INVENTARIO -->
+<section id="inventario" class="section bg-warm">
+  <div class="wrap">
+    <div class="prod-header rev">
+      <div>
+        <p class="eyebrow">Tarimas disponibles</p>
+        <h2 class="heading heading--shine">Opciones para distintos ritmos de operacion</h2>
+      </div>
+      <a href="#contact" class="btn-outline">Solicitar cotizacion</a>
+    </div>
+    <div class="prod-grid">
+      <article class="prod-card rev d1">
+        <div class="prod-photo">
+          <img src="imagenes/tarimas-hero.webp" alt="Pilas de tarimas de madera reciclada" loading="lazy">
+        </div>
+        <h3>Tarima reciclada estandar</h3>
+        <p>Ideal para almacenaje y traslado general, seleccionada para mantener buen desempeno a menor costo.</p>
+        <a class="prod-pill" href="https://wa.me/525641225210?text=Hola%2C%20quiero%20cotizar%20tarima%20reciclada%20estandar" target="_blank" rel="noopener noreferrer">Preguntar disponibilidad</a>
+      </article>
+
+      <article class="prod-card rev d2">
+        <div class="prod-photo">
+          <img src="imagenes/tarimas-bodega.webp" alt="Tarimas recicladas almacenadas en bodega" loading="lazy">
+        </div>
+        <h3>Tarima para mayoreo</h3>
+        <p>Volumen para empresas que requieren abasto constante y una solucion eficiente para patio o almacen.</p>
+        <a class="prod-pill" href="https://wa.me/525641225210?text=Hola%2C%20quiero%20cotizar%20tarimas%20por%20mayoreo" target="_blank" rel="noopener noreferrer">Cotizar volumen</a>
+      </article>
+
+      <article class="prod-card rev d3">
+        <div class="prod-photo">
+          <img src="imagenes/tarimas-taller.webp" alt="Tarimas de madera en area de trabajo" loading="lazy">
+        </div>
+        <h3>Tarima reparada</h3>
+        <p>Piezas recuperadas y reforzadas para extender su vida util dentro de ciclos de trabajo exigentes.</p>
+        <a class="prod-pill" href="https://wa.me/525641225210?text=Hola%2C%20quiero%20informacion%20sobre%20reparacion%20de%20tarimas" target="_blank" rel="noopener noreferrer">Consultar reparacion</a>
+      </article>
+
+      <article class="prod-card rev d4">
+        <div class="prod-photo">
+          <img src="imagenes/tarimas-detalle.webp" alt="Detalle frontal de pallets de madera" loading="lazy">
+        </div>
+        <h3>Tarima a la medida</h3>
+        <p>Fabricacion o ajuste bajo pedido para cargas, espacios o procesos con especificaciones particulares.</p>
+        <a class="prod-pill" href="https://wa.me/525641225210?text=Hola%2C%20necesito%20una%20tarima%20a%20la%20medida" target="_blank" rel="noopener noreferrer">Enviar medidas</a>
+      </article>
+    </div>
+    <p class="prod-note rev">Nombre comercial, horario y servicios son propuesta editable hasta confirmacion final del cliente.</p>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section bg-dark">
+  <canvas id="pcanvasWhy" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img src="imagenes/tarimas-calle.webp" alt="Pallets de madera listos para entrega" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">Eco</p>
+          <p class="wib-l">menor desperdicio</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por que elegirnos</p>
+        <h2 class="heading heading--white heading--shine-dark">Una alternativa mas inteligente que comprar nuevo cada vez</h2>
+        <p class="sub sub--white">La madera recuperada permite bajar costos, liberar espacio y sostener operaciones con una huella material mas ligera.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 7c-7 0-12 4-12 10"/><path d="M20 7c0 7-4 12-10 12-4 0-7-3-7-7 0-6 5-10 17-10z"/></svg></div>
+            <div>
+              <h4>Economia circular</h4>
+              <p>Recuperamos tarimas para que la madera siga trabajando antes de convertirse en residuo.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16"/><path d="M12 4v16"/><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg></div>
+            <div>
+              <h4>Menor costo operativo</h4>
+              <p>Tarimas recicladas y reparadas ayudan a controlar presupuesto sin sacrificar funcionalidad.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></div>
+            <div>
+              <h4>Atencion directa</h4>
+              <p>Comunicate por WhatsApp o llamada para resolver medidas, volumen y disponibilidad sin rodeos.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 7h18v10H3z"/><path d="M7 7v10M17 7v10M3 12h18"/></svg></div>
+            <div>
+              <h4>Uso industrial</h4>
+              <p>Soluciones pensadas para almacen, patio, carga, distribucion y manejo repetido de producto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="numbers">
+  <div class="numbers-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head section-head--center rev">
+      <p class="eyebrow eyebrow--white">Proceso</p>
+      <h2 class="heading heading--white heading--shine-dark">Cotizacion simple en 4 pasos</h2>
+    </div>
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v">01</p>
+        <p class="num-l">Indica tipo de tarima, medidas y volumen aproximado</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v">02</p>
+        <p class="num-l">Revisamos disponibilidad o posibilidad de fabricacion</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v">03</p>
+        <p class="num-l">Compartimos propuesta por telefono o WhatsApp</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v">04</p>
+        <p class="num-l">Coordinamos entrega, compra o reparacion segun el caso</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <canvas id="pcanvasGaleria" class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Fotografia real</p>
+      <h2 class="heading heading--white heading--shine-dark">Producto visible, sin adornos innecesarios</h2>
+      <p class="brands-sub">Seleccion de fotos de tarimas apiladas en patio y bodega, tratadas con recortes limpios para dar prioridad al producto.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1"><img src="imagenes/tarimas-hero.webp" alt="Tarimas apiladas al exterior" loading="lazy"></div>
+      <div class="brand-card rev d2"><img src="imagenes/tarimas-bodega.webp" alt="Tarimas apiladas en interior de bodega" loading="lazy"></div>
+      <div class="brand-card rev d3"><img src="imagenes/tarimas-detalle.webp" alt="Textura y estructura de pallets de madera" loading="lazy"></div>
+      <div class="brand-card rev d4"><img src="imagenes/tarimas-taller.webp" alt="Tarimas de madera en taller" loading="lazy"></div>
+    </div>
+    <p class="brands-note rev">Fotos convertidas a WebP para carga rapida y mejor rendimiento en la landing.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-light">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info rev from-l">
+        <div class="contact-info-content">
+          <p class="eyebrow eyebrow--white">Contacto</p>
+          <h2 class="heading heading--white">Cotiza tarimas para tu operacion</h2>
+          <p class="sub sub--white">Comparte medidas, cantidad y uso esperado. La respuesta se atiende por WhatsApp o llamada directa.</p>
+          <div class="c-list">
+            <div class="c-item">
+              <div class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.64 2.6a2 2 0 0 1-.45 2.11L8.1 9.63a16 16 0 0 0 6.27 6.27l1.2-1.2a2 2 0 0 1 2.11-.45c.83.31 1.7.52 2.6.64A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <p class="c-label">Telefono / WhatsApp</p>
+                <p class="c-value"><a href="tel:+525641225210">+52 56 4122 5210</a></p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div>
+                <p class="c-label">Horario propuesto</p>
+                <p class="c-value">Lunes a sabado, 9:00 a.m. - 6:00 p.m.</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></div>
+              <div>
+                <p class="c-label">Rubro</p>
+                <p class="c-value">Venta y reciclaje de tarimas de madera</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicitar informacion</h3>
+          <p class="form-sub">El formulario prepara un mensaje directo para WhatsApp.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="ft">Telefono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 000 000 0000" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Servicio *</label>
+              <select class="fi" id="fs" name="servicio" required>
+                <option value="">Seleccione una opcion</option>
+                <option value="Venta de tarimas recicladas">Venta de tarimas recicladas</option>
+                <option value="Compra de pallets usados">Compra de pallets usados</option>
+                <option value="Reparacion de tarimas">Reparacion de tarimas</option>
+                <option value="Fabricacion a la medida">Fabricacion a la medida</option>
+                <option value="Mayoreo para empresa">Mayoreo para empresa</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Detalle</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="4" placeholder="Cantidad, medidas, tipo de uso o cualquier detalle relevante"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <span class="logo-mark" aria-hidden="true">ET</span>
+          <span class="wordmark">EcoTarimas <em>MX</em></span>
+        </div>
+        <p class="foot-desc">Venta, compra, reparacion y fabricacion de tarimas de madera reciclada para empresas. Marca y textos sujetos a confirmacion final del cliente.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Venta de tarimas</a></li>
+          <li><a href="#services">Compra de usados</a></li>
+          <li><a href="#services">Reparacion</a></li>
+          <li><a href="#services">Fabricacion</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Empresa</p>
+        <ul class="foot-links">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#inventario">Tarimas</a></li>
+          <li><a href="#numbers">Proceso</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+525641225210">+52 56 4122 5210</a></li>
+          <li><a href="https://wa.me/525641225210" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li>
+          <li><a href="#contact">Solicitar cotizacion</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 <span>EcoTarimas MX</span>. Todos los derechos reservados.</p>
+      <p>Landing page de una sola pagina</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING ACTION BUTTONS -->
+<div class="fab-stack">
+  <a href="tel:+525641225210" class="fab-btn call-btn" aria-label="Llamar a EcoTarimas MX">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path fill="currentColor" d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02z"/>
+    </svg>
+  </a>
+  <a href="https://wa.me/525641225210?text=Hola%2C%20me%20interesa%20cotizar%20tarimas%20de%20madera" target="_blank" rel="noopener noreferrer" class="fab-btn wa-btn" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+      <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.87 9.88"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
