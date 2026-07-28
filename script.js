@@ -1,6 +1,6 @@
 document.documentElement.classList.add("js");
 
-const PHONE_WA = "525641225210";
+const PHONE_WA = "524443914094";
 
 document.body.classList.add("loading");
 
@@ -207,7 +207,7 @@ form?.addEventListener("submit", (event) => {
   if (!isValid) return;
 
   const text = [
-    "Hola, me interesa cotizar con EcoTarimas MX.",
+    "Hola, me interesa cotizar con Tari+.",
     `Nombre: ${name}`,
     `Telefono: ${phone}`,
     `Servicio: ${service}`,
